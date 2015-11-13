@@ -11,8 +11,12 @@
 	<div id="mocha"></div>
 	<script>
 		window.onload = function() {
-			document.getElementsByTagName('h2').forEach(function(e) {
-				e.nextSibling.style.display = e.nextSibling.style.display === "none" ? "" : "none";
+			var h2s = Array.prototype.slice.call(document.getElementsByTagName('h2'));
+
+			h2s.forEach(function(e) {
+				e.onclick = function() {
+					e.nextSibling.style.display = e.nextSibling.style.display === "none" ? "" : "none";
+				};
 			});
 		};
 	</script>
