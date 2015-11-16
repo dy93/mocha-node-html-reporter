@@ -1,6 +1,6 @@
 {
   "name": "mocha-node-html-reporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "mocha html reprter can be used in node environment",
   "main": "index.js",
   "scripts": {
